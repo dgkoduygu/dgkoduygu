@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Doğum Günün Kutlu Olsun</title>
+    </head>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+<body style=" background-image: url('image1.png'); background-color:#1A2126; background-size: 100%; background-repeat: no-repeat;">
+<div>
+<p style="text-align:center; font-size:40px; color:purple;"> Doğum Günün Kutlu Olsun Duygu</p>
+</div>
+<div style="position:center">
+<h3 style=" color:purple; margin-top:80px; ">geçen sene alınan hediyedeki karakterin ismi (ingilizce ve küçük harflerle)</h3>
+<textarea id="text" style="margin-left:80px;margin-top:10px; display:block;text-align: left; padding-left:60px;resize:none;background-color:#696C6F; border-radius: 5px;"></textarea>
+<button class="cv">Kilidi Aç</button>
+</div>
+<div id="hid" style="display:none;">
+
+<img src="d1.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d2.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d3.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d4.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d5.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d6.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d7.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d8.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d9.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+<img src="d10.png" style="margin-top:30px;width:100%; height:100% background-repeat: no-repeat;" >
+</div>
+
+</body>
+    <footer style="color: white ">
+         Designed by <a href="https://mhmtgks.github.io/">Mehmet Göksu</a>
+    </footer>
+<script>
+		var targetText = "kakashi";
+      $(document).ready(function(){
+        $("button").click(function(){
+		    var textarea = document.getElementById('text');
+            var text = textarea.value; 
+		if(text===targetText)
+          $("#hid").toggle();
+        });
+      });
+
+</script>
+ <style>
+.cv{height: 40px;
+margin-top:20px;
+    margin-left: 80px;
+    width: 220px;
+	background-color:#FFE071;
+	 border-radius: 5px;}
+        .cv:hover{
+		 background:#FFE071;
+box-shadow: 0 0 5px #FFE071, 0 0 25px #FFE071,0 0 50px #FFE071, 0 0 200px #FFE071; 
+ 
+ 
+		}
+        footer {
+            background-color: #1A2126;
+            color: #fff; 
+            text-align: center; 
+            padding: 10px; 
+        }
+    </style>
